@@ -1,3 +1,5 @@
+import urllib.request
+
 def writetolist(f):
   '''adding links in the file to a list'''
   my_list = f.read().splitlines()
@@ -6,7 +8,6 @@ def writetolist(f):
 
 def save_image(image_list):
   '''setting filename'''
-  import urllib.request
   urllib.error.HTTPError
   for i in image_list:
     filename: str = str((image_list.index(i))+1) +".jpg"
